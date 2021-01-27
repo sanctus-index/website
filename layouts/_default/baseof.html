@@ -5,8 +5,7 @@
     <div id="info-left-outer">
       <div id="info-left-inner">
         <a id="info-left-header" href="{{ .Site.BaseURL }}">Finn Sauer</a>
-        <a href="{{ .Site.BaseURL }}blog/">Blog</a>
-        {{ range where .Site.RegularPages "Type" "page" }}
+        {{ range where .Site.RegularPages.ByWeight "Type" "page" }}
           <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
         {{ end }}
       </div>
