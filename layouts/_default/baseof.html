@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head" . }}
+  <body>
+    <div id="info-left-outer">
+      <div id="info-left-inner">
+        <a id="info-left-header" href="{{ .Site.BaseURL }}">Finn Sauer</a>
+        <a href="{{ .Site.BaseURL }}blog/">Blog</a>
+        {{ range where .Site.RegularPages "Type" "page" }}
+          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+    <div id="flexbox">
+      <div id="content">
+        {{ block "content" . }}{{ end }}
+      </div>
+      <div id="info-right">
+        <div class="info-right-entry">
+          Accusantium doloremque laudantium totam rem aperiam eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae
+          vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia
+          voluptas sit aspernatur aut.
+        </div>
+        <div class="info-right-entry">
+          Accusantium doloremque laudantium totam rem aperiam eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae
+          vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia
+          voluptas sit aspernatur aut.
+        </div>
+        <div class="info-right-entry">
+          Accusantium doloremque laudantium totam rem aperiam eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae
+          vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia
+          voluptas sit aspernatur aut.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

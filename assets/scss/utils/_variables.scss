@@ -1,0 +1,20 @@
+// light theme
+:root {
+    --background: #f8f8f8;
+    --background-dark: #f0f0f0;
+    --background-light: #e8e8e8;
+    --foreground: #454545;
+    --highlight: #7B14D1;
+    --shadow: #999
+}
+
+// dark theme
+@media(prefers-color-scheme: dark) {
+    :root {
+        --background: #454545;
+        --background-dark: #f0f0f0;
+        --background-light: #e8e8e8;
+        --foreground: #f8f8f8;
+        --highlight: #7B14D1;
+    }
+}

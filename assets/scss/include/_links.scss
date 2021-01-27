@@ -1,0 +1,31 @@
+a {
+    color: var(--highlight);
+    text-decoration: underline;
+    text-decoration-color: #9f9f9f;
+    &:hover {
+        color: #333;
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+    &:active {
+        color: black;
+        // TODO : Add a blink effect when clicked
+    }
+}
+
+#info-left-outer #info-left-inner a {
+
+    @include apply-when(desktop) {
+        display: block;
+        padding: 0;
+    }
+    padding-right: 1rem;
+    display: inline;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+        background-color: var(--background-dark);
+    }
+}

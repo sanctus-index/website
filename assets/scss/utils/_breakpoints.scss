@@ -1,0 +1,22 @@
+/* To expand this, one just has to add a new key and its corresponding
+ * value. E.g.:
+ *   'behemoth': 100000px
+ */
+
+$breakpoints: (
+  'desktop' : 75rem,
+  'wide'    : 90rem,
+);
+
+@mixin apply-when($breakpoint) {
+  // Retrieves the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

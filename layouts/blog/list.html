@@ -1,0 +1,16 @@
+{{ define "content" }}
+<h1>{{ .Page.Title }}</h1>
+<p>{{ .Page.Content }}</p>
+<ul class="list">
+  {{ range where .Site.RegularPages "Type" "blog" }}
+  <li>
+    <a href="{{ .Page.Permalink }}">
+      {{ .Page.Title }}
+    </a>
+    <span class="date">
+      {{ .PublishDate.Format "2006-01-02" }}
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
