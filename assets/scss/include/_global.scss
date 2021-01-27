@@ -4,10 +4,10 @@ body {
     line-height: 1.44em;
 
     @include apply-when(desktop) {
-        font-size: calc(16px + 4px);
+        font-size: calc(#{$font-size} + 4px);
     }
 
-    font-size: 16px;
+    font-size: $font-size;
     padding: 0;
     margin: 0;
 }
@@ -20,14 +20,14 @@ body {
         margin: 0;
     }
     margin: 0 auto;
-    max-width: 36rem;
+    max-width: 38rem;
 
     padding-left: 1rem;
 
     h1 {
         font-family: "UnifrakturMaguntia";
         font-weight: normal;
-        font-size: calc(16px * 3);
+        font-size: calc(#{$font-size} * 3);
         line-height: 3rem;
         padding-bottom: 1rem;
         border-bottom: dashed 2px;
