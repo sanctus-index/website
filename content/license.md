@@ -1,6 +1,6 @@
 ---
 title: License
-weight: 103
+weight: 104
 ---
 
 More things on copyleft licenses and why you should use them.
