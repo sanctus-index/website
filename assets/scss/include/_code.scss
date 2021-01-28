@@ -1,1 +1,19 @@
-pre {}
+pre {
+    font-family: Roboto Mono, monospace;
+
+    @include apply-when(desktop) {
+        font-size: calc(#{$font-size} / 1.1);
+    }
+    font-size: calc(#{$font-size} / 1.2);
+
+    max-width: $max-width;
+    overflow-x: scroll;
+    line-height: $sline-height;
+
+    background-color: var(--background-dark);
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    border-color: var(--background-darker);
+
+    padding: $ssspace;
+}
