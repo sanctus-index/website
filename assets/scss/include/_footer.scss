@@ -1,8 +1,8 @@
 .footer {
     border-top: dashed 1px var(--shadow);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    line-height: 1.22rem;
+    padding-top: $ssspace;
+    margin-top: $space;
+    line-height: $sline-height;
     font-size: calc(#{$font-size} / 1.3);
     color: var(--shadow);
 }

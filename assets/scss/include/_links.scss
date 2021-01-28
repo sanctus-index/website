@@ -1,14 +1,14 @@
 a {
     color: var(--highlight);
     text-decoration: underline;
-    text-decoration-color: #9f9f9f;
+    text-decoration-color: var(--foreground-light);
     &:hover {
-        color: #333;
+        color: var(--foreground-dark);
         text-decoration: underline;
-        text-decoration-color: black;
+        text-decoration-color: var(--foreground-darker);
     }
     &:active {
-        color: black;
+        color: var(--foreground-darker);
         // TODO : Add a blink effect when clicked
     }
 }
@@ -23,7 +23,7 @@ a {
     display: inline;
 
     text-decoration: none;
-    font-size: 20px;
+    font-size: calc(#{$font-size} + 4px);
 
     &:hover {
         background-color: var(--background-dark);

@@ -1,22 +1,44 @@
 $font-size: 16px;
 
+$xspace: 3rem;
+$space: 2rem;
+$sspace: 1rem;
+$ssspace: 0.5rem;
+
+$line-height: 1.44em;
+$sline-height: 1.22rem;
+
+$max-width: 46rem;
+$smax-width: 38rem;
+
+$info-width: 16rem;
+
 // light theme
 :root {
     --background: #f8f8f8;
     --background-dark: #f0f0f0;
-    --background-light: #e8e8e8;
+    --background-darker: #e8e8e8;
+    --background-light: #fdfdfd;
     --foreground: #454545;
+    --foreground-dark: #333;
+    --foreground-darker: #000;
+    --foreground-light: #9f9f9f;
     --highlight: #7B14D1;
-    --shadow: #999
+    --shadow: #999;
 }
 
 // dark theme
 @media(prefers-color-scheme: dark) {
     :root {
         --background: #454545;
-        --background-dark: #f0f0f0;
-        --background-light: #e8e8e8;
+        --background-dark: #444;
+        --background-darker: #333;
+        --background-light: #555;
         --foreground: #f8f8f8;
-        --highlight: #7B14D1;
+        --foreground-dark: #fdfdfd;
+        --foreground-darker: #fff;
+        --foreground-light: #e8e8e8;
+        --highlight: #9B34F1;
+        --shadow: #ddd;
     }
 }

@@ -1,7 +1,7 @@
 body {
     color: var(--foreground);
     background-color: var(--background);
-    line-height: 1.44em;
+    line-height: $line-height;
 
     @include apply-when(desktop) {
         font-size: calc(#{$font-size} + 4px);
@@ -16,21 +16,22 @@ body {
     text-align: justify;
 
     @include apply-when(desktop) {
-        max-width: 46rem;
+        max-width: $max-width;
         margin: 0;
     }
     margin: 0 auto;
-    max-width: 38rem;
+    max-width: $smax-width;
 
-    padding-left: 1rem;
+    padding-left: $sspace;
 
     h1 {
         font-family: "UnifrakturMaguntia";
         font-weight: normal;
         font-size: calc(#{$font-size} * 3);
-        line-height: 3rem;
-        padding-bottom: 1rem;
+        line-height: $xspace;
+        padding-bottom: $sspace;
         border-bottom: dashed 2px;
+        border-color: var(--foreground);
         // padding-top: 1rem;
     }
 }

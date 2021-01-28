@@ -4,16 +4,16 @@
         top: 0;
         left: 0;
         bottom: 0;
-        width: 16rem;
+        width: $info-width;
 
         margin-left: 0;
         padding-left: 0;
     }
 
     margin: 0 auto;
-    max-width: 36rem;
+    max-width: $smax-width;
 
-    padding: 0 2rem;
+    padding: 0 $space;
 
     z-index: 1;
 
@@ -22,9 +22,9 @@
         @include apply-when(desktop) {
             position: absolute;
 
-            left: 1rem;
-            bottom: 1rem;
-            right: 1rem;
+            left: $sspace;
+            bottom: $sspace;
+            right: $sspace;
         }
 
         left: 0;
@@ -37,15 +37,15 @@
                 display: block;
                 padding: 0;
             }
-            padding-right: 1rem;
+            padding-right: $sspace;
             display: inline;
 
             text-decoration: none;
-            font-size: 20px;
+            font-size: calc(#{$font-size} + 4px);
         }
 
         #info-left-header {
-            padding: 1rem 0;
+            padding: $sspace 0;
             display: block;
         }
     }
@@ -54,20 +54,20 @@
 #flexbox {
     @include apply-when(desktop) {
         display: flex;
-        margin-left: 16rem;
+        margin-left: $info-width;
     }
     display: block;
     margin-left: 0;
 
     #content {
         @include apply-when(desktop) {
-            flex: 0 0 46rem;
-            max-width: none;
+            flex: 0 0 $max-width;
+            max-width: $max-width;
         }
         flex: none;
-        max-width: 36rem;
+        max-width: $smax-width;
 
-        padding: 0 2rem;
+        padding: 0 $space;
 
         // border-left: dotted 2px gray;
         // border-right: dotted 2px gray;
@@ -82,6 +82,6 @@
         display: none;
 
         flex: 1;
-        padding-left: 2rem;
+        padding-left: $space;
     }
 }
