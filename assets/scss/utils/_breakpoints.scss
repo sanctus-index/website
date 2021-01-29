@@ -4,8 +4,8 @@
  */
 
 $breakpoints: (
-  'desktop' : 75rem,
-  'wide'    : 90rem,
+  'desktop' : 70rem,
+  'wide'    : 85rem,
 );
 
 @mixin apply-when($breakpoint) {
