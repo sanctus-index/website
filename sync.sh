@@ -16,6 +16,8 @@ _dir=${_this%/*}
 _webroot=$(readlink -f ~/web)
 _public=${_webroot}/public
 
+time {
+
 # If folder exist; remove it
 [[ ! -e ${_public} ]] && rm -rf ${_public}
 
@@ -25,3 +27,5 @@ hugo
 
 # Upload to server
 rsync -zrvP --delete-after ${_public} ${WEBSITE}:/var/www/website
+
+}
