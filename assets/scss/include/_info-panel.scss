@@ -30,14 +30,18 @@
         left: 0;
         right: 0;
 
+        @include apply-when(desktop) {
+            padding-bottom: 0;
+        }
+        padding-bottom: $space;
 
         a {
 
             @include apply-when(desktop) {
                 display: block;
-                padding: 0;
+                padding: $ssspace;
             }
-            padding-right: $sspace;
+            padding: $ssspace;
             display: inline;
 
             text-decoration: none;
@@ -45,7 +49,7 @@
         }
 
         #info-left-header {
-            padding: $sspace 0;
+            padding: $space $ssspace;
             display: block;
         }
     }
