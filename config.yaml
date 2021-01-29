@@ -1,3 +1,7 @@
 baseURL:      "https://finnsauer.com/"
 languageCode: "en-us"
 title:        "Finn Sauer"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
