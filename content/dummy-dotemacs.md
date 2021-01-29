@@ -1,5 +1,7 @@
 ---
 title: Dotemacs
-url: /dotemacs
+url: dotemacs/
 weight: 103
 ---
+
+Some text
