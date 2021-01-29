@@ -1,0 +1,94 @@
+# -*- eval: (org-hugo-auto-export-mode 1); -*-
+#+AUTHOR: Finn Sauer
+#+EMAIL: <finn@finnsauer.xyz>
+#+HUGO_SECTION: blog
+#+HUGO_BASE_DIR: ~/web
+#+STARTUP: logdone
+
+* Home Page
+:PROPERTIES:
+:CUSTOM_ID: h:1648b91c-270b-4ae0-83cc-a6ea90b2d24b
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: _index
+:END:
+
+Here is some content for the /index.html/ page.
+
+Ratione voluptatem sequi nesciunt Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur adipisci velit sed quia non
+numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+quaerat voluptatem Ut enim ad minima veniam quis nostrum exercitationem
+ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi
+consequatur Quis autem vel eum iure reprehenderit qui in ea voluptate
+velit esse quam nihil molestiae consequatur vel illum qui dolorem eum
+fugiat quo voluptas nulla pariatur At vero eos et accusamus et iusto
+odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+atque corrupti quos dolores et quas?
+
+* License
+:PROPERTIES:
+:CUSTOM_ID: h:5ac6a93c-858b-46c8-b4d8-963973a4d188
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: license
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 104
+:END:
+
+More things on copyleft licenses and why you should use them.
+
++ GNU Public License Version 3.0 or later quick guide:
+  + https://www.gnu.org/licenses/quick-guide-gplv3.html
++ Creative Commons BY-SA 4.0 quick guide:
+  + https://creativecommons.org/licenses/by-sa/4.0/
+n
+* Contact
+:PROPERTIES:
+:CUSTOM_ID: h:1da94a3e-a886-4769-8634-030029442f78
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: contact
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 101
+:END:
+
+Questions or thoughts are always appreciated.
+
+finn@finnsauer.com
+
+Finn Sauer
+
+* About
+:PROPERTIES:
+:CUSTOM_ID: h:aa4ab31e-3546-4e1a-b1ff-49b7c0dc081b
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 100
+:END:
+
++ Hugo Version: *src_elisp{(nth 4
+                            (s-split " "
+                             (shell-command-to-string "hugo version")))}*
+
+This website is crafted with [[https://gohugo.io/][Hugo]] and Emacs' [[https://orgmode.org/][Org Mode]] ([[https://ox-hugo.scripter.co/][ox-hugo]]).  The
+underlying HTML and CSS is written by me.  Each content-- that is the
+text of a site-- is written in a single Org Mode file.
+
+* Blog
+:PROPERTIES:
+:CUSTOM_ID: h:c761582c-bf98-473f-92fd-dca9374c819e
+:EXPORT_HUGO_SECTION: /blog
+:EXPORT_FILE_NAME: _index
+:END:
+
+This blog will mostly be about technology and close related topics.  In
+the future I might split it into multiple blogs with different topics
+(hierarchically) or a tag based system.
+
+* Blog Posts
+:PROPERTIES:
+:CUSTOM_ID: h:b3ace5f9-c588-481d-994d-3871b8bc6f45
+:END:
+** TODO Hello World
+:PROPERTIES:
+:EXPORT_FILE_NAME: hello-world
+:CUSTOM_ID: h:def96466-2080-40df-964e-7259f95e5575
+:END:
+
+This is my first blog post.
