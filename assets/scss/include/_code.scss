@@ -16,4 +16,16 @@ pre {
     border-color: var(--background-darker);
 
     padding: $ssspace;
+
+    code {
+        border: none;
+    }
+}
+
+code {
+    font-family: Roboto Mono, monospace;
+    background-color: var(--background-dark);
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-color: var(--background-darker);
 }
