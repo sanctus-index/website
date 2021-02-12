@@ -78,8 +78,10 @@ text of a site-- is written in a single Org Mode file.
 :END:
 
 This blog will mostly be about technology and close related topics.  In
-the future I might split it into multiple blogs with different topics
-(hierarchically) or a tag based system.
+the future I might split it into multiple blogs with different topics--
+a hierarchically based system-- or a tag based system.
+
+Right now there is a beta version of tags.  That can be found [[https://finnsauer.com/tags/][here]].
 
 * Blog Posts
 :PROPERTIES:

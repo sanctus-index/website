@@ -1,0 +1,17 @@
+{{ define "content" }}
+<h1>Tag: "{{ .Page.Title }}"</h1>
+<ul class="blog-list">
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .Page.Permalink }}">
+      {{ .Page.Title }}
+    </a>
+    <span class="blog-date">
+      {{ if ( isset .Params "date" ) }}
+      {{ .PublishDate.Format "2006-01-02" }}
+      {{ end }}
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
