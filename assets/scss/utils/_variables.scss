@@ -5,6 +5,7 @@ $space: 2rem;
 $sspace: 1rem;
 $ssspace: 0.5rem;
 
+$xline-height: 1.66em;
 $line-height: 1.44em;
 $sline-height: 1.22rem;
 
@@ -15,9 +16,9 @@ $info-width: 16rem;
 
 // light theme
 :root {
-    --background: #f8f8f8;
-    --background-dark: #f0f0f0;
-    --background-darker: #e8e8e8;
+    --background: #efefef;
+    --background-dark: #e0e0e0;
+    --background-darker: #d8d8d8;
     --background-light: #fdfdfd;
     --foreground: #454545;
     --foreground-dark: #333;
@@ -34,9 +35,9 @@ $info-width: 16rem;
         --background-dark: #444;
         --background-darker: #333;
         --background-light: #555;
-        --foreground: #f8f8f8;
-        --foreground-dark: #fdfdfd;
-        --foreground-darker: #fff;
+        --foreground: #efefef;
+        --foreground-dark: #e0e0e0;
+        --foreground-darker: #d8d8d8;
         --foreground-light: #e8e8e8;
         --highlight: #9B34F1;
         --shadow: #ddd;
