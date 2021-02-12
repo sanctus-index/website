@@ -1,0 +1,8 @@
+<div class="info-right-entry">
+  <div class="info-right-header">Last five blog entries:</h2>
+  <ol class="info-right-list">
+    {{ range first 5 (where .Site.RegularPages.ByDate "Type" "blog").Reverse }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+  </ol>
+</div>
