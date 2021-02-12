@@ -39,10 +39,10 @@
 
             @include apply-when(desktop) {
                 display: block;
-                padding: $ssspace;
             }
             padding: $ssspace;
             display: inline;
+            line-height: $xline-height;
 
             text-decoration: none;
             font-size: calc(#{$font-size} + 4px);
