@@ -1,6 +1,6 @@
-# -*- eval: (org-hugo-auto-export-mode 1); -*-
+# -*- eval: (index/org-hugo-auto-export-mode 1); -*-
 #+AUTHOR: Finn Sauer
-#+EMAIL: <finn@finnsauer.xyz>
+#+EMAIL: <public@finnsauer.com>
 #+HUGO_SECTION: blog
 #+HUGO_BASE_DIR: ~/web
 #+STARTUP: logdone
@@ -12,34 +12,53 @@
 :EXPORT_FILE_NAME: _index
 :END:
 
-Here is some content for the /index.html/ page.
+#+HTML: <h2>
+Under Construction
+#+HTML: </h2>
 
-Ratione voluptatem sequi nesciunt Neque porro quisquam est qui dolorem
-ipsum quia dolor sit amet consectetur adipisci velit sed quia non
-numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-quaerat voluptatem Ut enim ad minima veniam quis nostrum exercitationem
-ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi
-consequatur Quis autem vel eum iure reprehenderit qui in ea voluptate
-velit esse quam nihil molestiae consequatur vel illum qui dolorem eum
-fugiat quo voluptas nulla pariatur At vero eos et accusamus et iusto
-odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-atque corrupti quos dolores et quas?
+This site currently is under construction; everything you see might
+change completely.  This is just a demo version.
 
-* License
+* About
 :PROPERTIES:
-:CUSTOM_ID: h:5ac6a93c-858b-46c8-b4d8-963973a4d188
+:CUSTOM_ID: h:aa4ab31e-3546-4e1a-b1ff-49b7c0dc081b
 :EXPORT_HUGO_SECTION: /
-:EXPORT_FILE_NAME: license
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 104
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 100
 :END:
 
-More things on copyleft licenses and why you should use them.
++ Hugo Version: *src_elisp{
+   (nth 4
+    (s-split " "
+     (shell-command-to-string
+      "hugo version")))}*
++ Repository Size: *src_elisp{
+   (file-size-human-readable
+    (apply
+     #'+
+     (mapcar (lambda (file)
+              (file-attribute-size
+               (file-attributes
+                (expand-file-name file))))
+             (directory-files-recursively "~/web" "."))))}*
++ Website Size: *src_elisp{
+   (file-size-human-readable
+    (apply
+     #'+
+     (mapcar (lambda (file)
+              (file-attribute-size
+               (file-attributes
+                (expand-file-name file))))
+             (directory-files-recursively "~/web/public" "."))))}*
 
-+ GNU Public License Version 3.0 or later quick guide:
-  + https://www.gnu.org/licenses/quick-guide-gplv3.html
-+ Creative Commons BY-SA 4.0 quick guide:
-  + https://creativecommons.org/licenses/by-sa/4.0/
-n
+
+This website is crafted with [[https://gohugo.io/][Hugo]] and Emacs' [[https://orgmode.org/][Org Mode]]: [[https://ox-hugo.scripter.co/][ox-hugo]].  The
+underlying HTML and CSS is written by me.  Each content-- that is the
+text of a site-- is written in a single Org Mode file.
+
+The website is under version control via [[http://www.git-scm.com/][Git]]; a link to the repository
+can be found here.
+
 * Contact
 :PROPERTIES:
 :CUSTOM_ID: h:1da94a3e-a886-4769-8634-030029442f78
@@ -50,25 +69,105 @@ n
 
 Questions or thoughts are always appreciated.
 
-finn@finnsauer.com
++ public@finnsauer.com
 
-Finn Sauer
+The following is my public gpg key.  Just import it in order to send
+encrypted email to me.
 
-* About
+#+begin_src
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+JtuZ7RXK9G71/D7LTHKiGgpk13qh
+=7ZAx
+-----END PGP PUBLIC KEY BLOCK-----
+#+end_src
+
+* License
 :PROPERTIES:
-:CUSTOM_ID: h:aa4ab31e-3546-4e1a-b1ff-49b7c0dc081b
+:CUSTOM_ID: h:5ac6a93c-858b-46c8-b4d8-963973a4d188
 :EXPORT_HUGO_SECTION: /
-:EXPORT_FILE_NAME: about
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 100
+:EXPORT_FILE_NAME: license
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 104
 :END:
 
-+ Hugo Version: *src_elisp{(nth 4
-                            (s-split " "
-                             (shell-command-to-string "hugo version")))}*
+TODO: more things on copyleft licenses and why you should use them.
 
-This website is crafted with [[https://gohugo.io/][Hugo]] and Emacs' [[https://orgmode.org/][Org Mode]] ([[https://ox-hugo.scripter.co/][ox-hugo]]).  The
-underlying HTML and CSS is written by me.  Each content-- that is the
-text of a site-- is written in a single Org Mode file.
++ GNU Public License Version 3.0 or later quick guide:
+  + https://www.gnu.org/licenses/quick-guide-gplv3.html
++ Creative Commons BY-SA 4.0 quick guide:
+  + https://creativecommons.org/licenses/by-sa/4.0/
 
 * Blog
 :PROPERTIES:
@@ -87,10 +186,57 @@ Right now there is a beta version of tags.  That can be found [[https://finnsaue
 :PROPERTIES:
 :CUSTOM_ID: h:b3ace5f9-c588-481d-994d-3871b8bc6f45
 :END:
-** TODO Hello World
+
+** DONE Hello World                                              :org:emacs:
+CLOSED: [2021-02-07 Sun]
 :PROPERTIES:
 :EXPORT_FILE_NAME: hello-world
 :CUSTOM_ID: h:def96466-2080-40df-964e-7259f95e5575
 :END:
 
-This is my first blog post.
+#+begin_abstract
+Some abstract text. Optio cumque nihil  impedit quo minus id quod maxime
+placeat  facere  possimus  omnis  voluptas  assumenda  est  omnis  dolor
+repellendus Temporibus autem quibusdam et aut officiis debitis aut rerum
+necessitatibus  saepe  eveniet  ut  et voluptates  repudiandae  sint  et
+molestiae  non recusandae  Itaque  earum rerum  hic  tenetur a  sapiente
+delectus ut aut!
+#+end_abstract
+
+This is my first blog post; noch eine schöne Zeit!
+
+#+begin_quote
+This is a quote.
+
+Over multiple lines
+#+end_quote
+
+** DONE Second Post from within Emacs                             :org:hugo:
+CLOSED: [2021-02-08 Mon]
+:PROPERTIES:
+:EXPORT_FILE_NAME: second-post-from-within-emacs
+:CUSTOM_ID: h:aa5a89fd-741e-407d-91e3-a8afedf9e8fb
+:END:
+
+#+begin_abstract
+In here I will demonstrate how I can list out blog posts in reverse
+order.
+#+end_abstract
+
+System Crafters recently put up a video where he shows how you can
+compose an email within Emacs.
+
+{{< youtube WiyqU7gmKsk >}}
+
+Here is some text after the video.
+
+Ex ea commodi consequatur Quis autem vel eum iure reprehenderit qui in
+ea voluptate velit esse quam nihil molestiae consequatur vel illum qui
+dolorem eum fugiat quo voluptas nulla pariatur At vero eos et accusamus
+et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint
+occaecati cupiditate non provident similique sunt in culpa qui officia
+deserunt mollitia animi id est laborum et dolorum fuga Et harum quidem
+rerum facilis est et expedita distinctio Nam libero tempore cum soluta
+nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+placeat.
