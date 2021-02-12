@@ -1,0 +1,5 @@
+{{ define "content" }}
+<h1>{{ .Page.Title }}</h1>
+<div class="date">{{ .Page.PublishDate.Format "2006-01-02" }}</div>
+<p>{{ .Page.Content }}</p>
+{{ end }}
