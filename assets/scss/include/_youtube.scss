@@ -1,0 +1,8 @@
+.yt-annotation {
+    border-top: dashed 1px var(--shadow);
+    padding-top: $ssspace;
+    margin-top: $sspace;
+    line-height: $sline-height;
+    font-size: calc(#{$font-size / 1.3});
+    color: var(--shadow);
+}

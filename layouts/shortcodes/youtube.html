@@ -1,0 +1,20 @@
+<div>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube.com/embed/{{ .Get 0 }}"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+            allowfullscreen
+            title="YouTube Video">
+    </iframe>
+  </div>
+  <div class="yt-annotation">
+    If you have javascript disabled or prefer to watch it in a proper
+    video player, you could watch this video
+    via <a href="https://youtube-dl.org/">youtube-dl</a>
+    and <a href="https://mpv.io/"> mpv</a>&mdash; or any video player
+    that supports youtube-dl; the corresponding mpv command would
+    be: <code>mpv -- '{{ .Page.Permalink }}'</code>.  Raw
+    link: <a href="https://www.youtube.com/watch?v={{ .Get 0 }}">
+      https://www.youtube.com/watch?v={{ .Get 0 }}</a>.
+
+  </div>
+</div>
