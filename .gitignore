@@ -1,4 +1,4 @@
 resources/_gen/
 public/
-layouts/dotemacs/
 content/blog/
+layouts/partials/dotemacs.html
