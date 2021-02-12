@@ -1,9 +1,21 @@
-.date {
-    float: right;
-    color: var(--shadow);
-}
-
-.list {
+.blog-list {
     list-style-type: none;
     padding: 0 $sspace;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+        }
+
+        .blog-date {
+            flex: 0 0 auto;
+            color: var(--shadow);
+        }
+    }
 }

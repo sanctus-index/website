@@ -1,14 +1,14 @@
 {{ define "content" }}
 <h1>{{ .Page.Title }}</h1>
 <p>{{ .Page.Content }}</p>
-<ul class="list">
+<ul class="blog-list">
   {{ range where .Site.RegularPages "Type" "blog" }}
   <li>
     <a href="{{ .Page.Permalink }}">
       {{ .Page.Title }}
     </a>
-    <span class="date">
-      {{ .PublishDate.Format "2006-01-02" }}
+    <span class="blog-date">
+      {{ .Page.PublishDate.Format "2006-01-02" }}
     </span>
   </li>
   {{ end }}
