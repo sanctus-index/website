@@ -26,6 +26,6 @@ cd ${_webroot}
 hugo
 
 # Upload to server
-rsync -zrvP --delete-after ${_public} ${WEBSITE}:/var/www/website
+rsync -zrvP --delete-after ${_public}/ ${WEBSITE}:/var/www/website
 
 }
