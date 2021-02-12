@@ -57,7 +57,7 @@ underlying HTML and CSS is written by me.  Each content-- that is the
 text of a site-- is written in a single Org Mode file.
 
 The website is under version control via [[http://www.git-scm.com/][Git]]; a link to the repository
-can be found here.
+can be found [[https://gitlab.com/indexfinn/website/-/commits/master][here]].
 
 * Contact
 :PROPERTIES:
