@@ -1,0 +1,10 @@
+.question {
+    margin: auto;
+    width: 90%;
+    font-style: italic;
+    text-align: left;
+
+    p:before {
+        content: "> ";
+    }
+}
