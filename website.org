@@ -169,6 +169,13 @@ TODO: more things on copyleft licenses and why you should use them.
 + Creative Commons BY-SA 4.0 quick guide:
   + https://creativecommons.org/licenses/by-sa/4.0/
 
+* Dotemacs
+:PROPERTIES:
+:CUSTOM_ID: h:30d120cd-d658-4520-a9b4-d78bd0b984bd
+:EXPORT_HUGO_SECTION: /dotemacs
+:EXPORT_FILE_NAME: _index
+:END:
+
 * Blog
 :PROPERTIES:
 :CUSTOM_ID: h:c761582c-bf98-473f-92fd-dca9374c819e
@@ -182,7 +189,28 @@ a hierarchically based system-- or a tag based system.
 
 Right now there is a beta version of tags.  That can be found [[https://finnsauer.com/tags/][here]].
 
-* Blog Posts
+* NO-HUGO Dummy Sites
+:PROPERTIES:
+:CUSTOM_ID: h:6edbcbb3-429f-4db5-8f98-ffae3e5600e9
+:END:
+
+** Blog
+:PROPERTIES:
+:CUSTOM_ID: h:615e67e6-1f88-4dd3-8f9e-74588059d3bd
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: dummy-blog
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :url blog/ :weight 103
+:END:
+
+** Dotemacs
+:PROPERTIES:
+:CUSTOM_ID: h:fa744b47-045f-4126-9647-3e6e3f079f1a
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: dummy-dotemacs
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :url dotemacs/ :weight 102
+:END:
+
+* NO-HUGO Blog Posts
 :PROPERTIES:
 :CUSTOM_ID: h:b3ace5f9-c588-481d-994d-3871b8bc6f45
 :END:
