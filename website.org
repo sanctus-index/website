@@ -37,10 +37,14 @@ change completely.  This is just a demo version.
     (apply
      #'+
      (mapcar (lambda (file)
-              (file-attribute-size
-               (file-attributes
-                (expand-file-name file))))
-             (directory-files-recursively "~/web" "."))))}*
+               (file-attribute-size
+                (file-attributes
+                 (expand-file-name file))))
+             (flatten-tree
+              (mapcar (lambda (file)
+                        (unless (s-match "\\.git/" file)
+                          file))
+                      (directory-files-recursively "~/web" "."))))))}*
 + Website Size: *src_elisp{
    (file-size-human-readable
     (apply
@@ -216,14 +220,14 @@ Right now there is a beta version of tags.  That can be found [[https://finnsaue
 :END:
 
 ** DONE Hello World                                              :org:emacs:
-CLOSED: [2021-02-07 Sun]
+CLOSED: [2021-02-14 Sun]
 :PROPERTIES:
 :EXPORT_FILE_NAME: hello-world
 :CUSTOM_ID: h:def96466-2080-40df-964e-7259f95e5575
 :END:
 
 #+begin_abstract
-Some abstract text. Optio cumque nihil  impedit quo minus id quod maxime
+Some abstract text.  Optio cumque nihil impedit quo minus id quod maxime
 placeat  facere  possimus  omnis  voluptas  assumenda  est  omnis  dolor
 repellendus Temporibus autem quibusdam et aut officiis debitis aut rerum
 necessitatibus  saepe  eveniet  ut  et voluptates  repudiandae  sint  et
@@ -236,7 +240,7 @@ This is my first blog post; noch eine schöne Zeit!
 #+begin_quote
 This is a quote.
 
-Over multiple lines
+Over multiple lines!
 #+end_quote
 
 ** DONE Second Post from within Emacs                             :org:hugo:
