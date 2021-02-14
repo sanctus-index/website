@@ -2,6 +2,7 @@ a {
     color: var(--highlight);
     text-decoration: underline;
     text-decoration-color: var(--foreground-light);
+    word-wrap: break-word;
     &:hover {
         color: var(--foreground-dark);
         text-decoration: underline;
