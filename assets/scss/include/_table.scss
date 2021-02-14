@@ -1,0 +1,10 @@
+.table-number {
+    display: none;
+}
+
+caption {
+    margin-bottom: $ssspace;
+    line-height: $sline-height;
+    font-size: calc(#{$font-size / 1.3});
+    color: var(--shadow);
+}
