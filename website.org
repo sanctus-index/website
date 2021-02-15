@@ -3,6 +3,7 @@
 #+EMAIL: <public@finnsauer.com>
 #+HUGO_SECTION: blog
 #+HUGO_BASE_DIR: ~/web
+#+TODO: TODO REVIEW | DONE
 #+STARTUP: logdone
 
 * Home Page
