@@ -1,7 +1,7 @@
 {{ define "content" }}
 <h1>{{ .Page.Title }}</h1>
 <p>{{ .Page.Content }}</p>
-<p>Articles: <code>{{ len (where .Site.RegularPages "Section" "!=" "") }}</code></p>
+<p>Articles: <b>{{ len (where .Site.RegularPages "Section" "!=" "") }}</b></p>
 <ul class="blog-list">
   {{ range where .Site.RegularPages "Type" "blog" }}
   <li>
