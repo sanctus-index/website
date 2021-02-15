@@ -20,7 +20,7 @@ a {
         display: block;
         padding: 0;
     }
-    padding-right: 1rem;
+    padding-right: $sspace;
     display: inline;
 
     text-decoration: none;
@@ -29,4 +29,9 @@ a {
     &:hover {
         background-color: var(--background-dark);
     }
+}
+
+#terms {
+    text-decoration: none;
+    padding: $ssspace;
 }
