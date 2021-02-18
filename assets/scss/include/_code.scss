@@ -29,24 +29,3 @@ code {
     border-bottom: solid 2px;
     border-color: var(--background-darker);
 }
-
-#git-commit {
-    font-size: calc(#{$font-size} / 1.1);
-    line-height: $sline-height;
-    width: 80%;
-    margin: 0 auto;
-    color: var(--shadow);
-
-
-    #git-commit-subject {
-        &::before {
-            content: "Last Git Commit – "
-        }
-    }
-
-    #git-commit-body {
-        font-size: calc(#{$font-size} / 1.3);
-        border: none;
-        background-color: var(--background);
-    }
-}
