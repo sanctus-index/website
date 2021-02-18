@@ -40,7 +40,7 @@ code {
 
     #git-commit-subject {
         &::before {
-            content: "Last Git Commit: "
+            content: "Last Git Commit – "
         }
     }
 
