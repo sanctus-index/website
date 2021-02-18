@@ -2,3 +2,4 @@ resources/_gen/
 public/
 layouts/partials/dotemacs.html
 content/
+layouts/partials/dotemacs-git-last-log.html
