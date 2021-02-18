@@ -3,3 +3,4 @@ public/
 layouts/partials/dotemacs.html
 content/
 layouts/partials/dotemacs-git-last-log.html
+layouts/partials/website-git-last-log.html

@@ -28,6 +28,8 @@ change completely.  This is just a demo version.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 100
 :END:
 
+{{< partial "website-git-last-log" >}}
+
 + Hugo Version: *src_elisp{
    (nth 4
     (s-split " "
