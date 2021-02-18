@@ -4,6 +4,5 @@
   {{ $style := resources.Get "scss/master.scss" }}
   {{ $style := $style | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
   <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
 </head>
