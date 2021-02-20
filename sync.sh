@@ -23,7 +23,7 @@ time {
 
 # Generate public folder
 cd ${_webroot}
-hugo
+hugo --minify
 
 # Upload to server
 rsync -zrvP --delete-after ${_public}/ ${WEBSITE}:/var/www/website
