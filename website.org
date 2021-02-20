@@ -279,33 +279,3 @@ This is a quote.
 
 Over multiple lines!
 #+end_quote
-
-** DONE Second Post from within Emacs                             :org:hugo:
-CLOSED: [2021-02-08 Mon]
-:PROPERTIES:
-:EXPORT_FILE_NAME: second-post-from-within-emacs
-:CUSTOM_ID: h:aa5a89fd-741e-407d-91e3-a8afedf9e8fb
-:END:
-
-#+begin_abstract
-In here I will demonstrate how I can list out blog posts in reverse
-order.
-#+end_abstract
-
-System Crafters recently put up a video where he shows how you can
-compose an email within Emacs.
-
-{{< youtube WiyqU7gmKsk >}}
-
-Here is some text after the video.
-
-Ex ea commodi consequatur Quis autem vel eum iure reprehenderit qui in
-ea voluptate velit esse quam nihil molestiae consequatur vel illum qui
-dolorem eum fugiat quo voluptas nulla pariatur At vero eos et accusamus
-et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-deleniti atque corrupti quos dolores et quas molestias excepturi sint
-occaecati cupiditate non provident similique sunt in culpa qui officia
-deserunt mollitia animi id est laborum et dolorum fuga Et harum quidem
-rerum facilis est et expedita distinctio Nam libero tempore cum soluta
-nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-placeat.
