@@ -18,7 +18,12 @@ Under Construction
 #+HTML: </h2>
 
 This site currently is under construction; everything you see might
-change completely.  This is just a demo version.
+change completely.  It's in its pre-alpha stage, so it's highly
+experimental.
+
+For instance the dark mode version isn't working properly, as I, myself,
+spend more time in light mode and thus I mostly focus on their
+respective colors.  I wish to fix it though.
 
 * About
 :PROPERTIES:
