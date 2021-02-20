@@ -57,7 +57,15 @@ change completely.  This is just a demo version.
                (file-attributes
                 (expand-file-name file))))
              (directory-files-recursively "~/web/public" "."))))}*
-
++ Website's LOC (HTML and SCSS): *src_elisp{
+   (->> (directory-files-recursively (expand-file-name "~/web") "\\(html\\|scss\\)$")
+        (--map (unless (or (s-match "public/" it) (s-match ".git/" it))
+                 it))
+        flatten-tree
+        (--map (with-temp-buffer
+                 (insert-file-contents it)
+                 (count-lines (point-min) (point-max))))
+        (apply #'+))}*
 
 This website is crafted with [[https://gohugo.io/][Hugo]] and Emacs' [[https://orgmode.org/][Org Mode]]: [[https://ox-hugo.scripter.co/][ox-hugo]].  The
 underlying HTML and CSS is written by me.  Each content-- that is the
