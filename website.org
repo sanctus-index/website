@@ -182,6 +182,8 @@ AfIJdrYqveuaiT/XFQx0wkYRcByP4cyb6PrRq69fnBRAWDSMYzmsY8mzpe2gYDBz
 :EXPORT_FILE_NAME: _index
 :END:
 
+{{< partial "dotemacs-git-last-log" >}}
+
 * Blog
 :PROPERTIES:
 :CUSTOM_ID: h:c761582c-bf98-473f-92fd-dca9374c819e
