@@ -190,12 +190,30 @@ a hierarchically based system-- or a tag based system.
 
 Right now there is a beta version of tags.  That can be found [[https://finnsauer.com/tags/][here]].
 
+* Feeds
+:PROPERTIES:
+:CUSTOM_ID: h:62b9de36-a1c0-4b94-b25f-5401d710430e
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: feeds
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 104
+:END:
+
+# TODO: remove the parentheses and add it as a foot note; still need to
+# figure things more out
+
+The specific RSS Feed of a tag can be found on their respective sites;
+go to [[https://finnsauer.com/tags/][this page]] and select the one you want to subscribe (This is not a
+typical subscription as you know it; you simply put the RSS Feed URL
+into your RSS Feed reader and be done with it.  If you want to
+unsubscribe, remove it.).  A master feed-- that is a feed that embodies
+all the tags-- can be found [[https://finnsauer.com/blog/index.xml][here]].
+
 * License
 :PROPERTIES:
 :CUSTOM_ID: h:5ac6a93c-858b-46c8-b4d8-963973a4d188
 :EXPORT_HUGO_SECTION: /
 :EXPORT_FILE_NAME: license
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 104
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 105
 :END:
 
 TODO: more things on copyleft licenses and why you should use them.

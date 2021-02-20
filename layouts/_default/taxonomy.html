@@ -1,6 +1,9 @@
 {{ define "content" }}
 <h1>Tags: {{ .Page.Title }}</h1>
 <ul class="blog-list">
+  <p>A RSS Feed for this specific tag can be found
+    <a href="https://finnsauer.com/tags/{{ .Page.Title }}/index.xml">here</a>
+  </p>
   {{ range .Pages }}
   <li>
     <a href="{{ .Page.Permalink }}">
