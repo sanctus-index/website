@@ -7,7 +7,7 @@ pre {
     font-size: calc(#{$font-size} / 1.2);
 
     max-width: $max-width;
-    overflow-x: scroll;
+    overflow-x: auto;
     line-height: $sline-height;
 
     background-color: var(--background-dark);
