@@ -73,8 +73,9 @@ respective colors.  I wish to fix it though.
         (apply #'+))}*
 
 This website is crafted with [[https://gohugo.io/][Hugo]] and Emacs' [[https://orgmode.org/][Org Mode]]: [[https://ox-hugo.scripter.co/][ox-hugo]].  The
-underlying HTML and CSS is written by me.  Each content-- that is the
-text of a site-- is written in a [[https://gitlab.com/indexfinn/website/-/blob/master/website.org][single Org Mode file]].
+underlying HTML and CSS (SCSS[fn:1:I am not referencing their website
+because of political reasons.]) is written by me.  Each content-- that
+is the text of a site-- is written in a [[https://gitlab.com/indexfinn/website/-/blob/master/website.org][single Org Mode file]].
 
 The website is under version control via [[http://www.git-scm.com/][Git]]; a link to the repository
 can be found [[https://gitlab.com/indexfinn/website/-/commits/master][here]].
