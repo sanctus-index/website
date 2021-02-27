@@ -1,0 +1,12 @@
+.footnotes {
+    font-size: calc(#{$font-size} / 1.1);
+    padding: $ssspace 0;
+
+    hr {
+        display: none;
+    }
+
+    ol {
+        list-style-type: lower-roman;
+    }
+}
