@@ -36,10 +36,10 @@ respective colors.  I wish to fix it though.
 {{< partial "website-git-last-log" >}}
 
 + Hugo Version: *src_elisp{
-   (nth 4
-    (s-split " "
-     (shell-command-to-string
-      "hugo version")))}*
+   (->> "hugo version"
+        shell-command-to-string
+        (s-split " ")
+        (nth 1))}*
 + Repository Size: *src_elisp{
    (file-size-human-readable
     (apply
