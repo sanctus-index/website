@@ -77,6 +77,12 @@ underlying HTML and CSS (SCSS[fn:1:I am not referencing their website
 because of political reasons.]) is written by me.  Each content-- that
 is the text of a site-- is written in a [[https://gitlab.com/indexfinn/website/-/blob/master/website.org][single Org Mode file]].
 
+The sever is hosted at [[https://www.vultr.com/?ref=8825891-6G][Vultr]].  One of the cheapest and efficient options
+I could find.  They provide you with everything you need: with a static
+IPv4/IPv6 address, option to open the port 25 for sending mail, and even
+more.  After assigning your domain name to the IP address it is as
+simple as =ssh your-domain-name.com=.
+
 The website is under version control via [[http://www.git-scm.com/][Git]]; a link to the repository
 can be found [[https://gitlab.com/indexfinn/website/-/commits/master][here]].
 
