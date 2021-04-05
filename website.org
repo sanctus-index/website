@@ -104,7 +104,7 @@ email to me.
 You can import my public GnuPG key with the following command:
 
 #+begin_src
-curl -LZ https://finnsauer.com/public-gpg-key.ascii | gpg --import
+curl -LZ https://finnsauer.com/public-gpg-key.ascii | gpg --import -
 #+end_src
 
 * Dotemacs
