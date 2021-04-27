@@ -3,11 +3,6 @@ body {
     background-color: var(--background);
     line-height: $line-height;
 
-    @include apply-when(desktop) {
-        font-size: calc(#{$font-size} + 4px);
-    }
-
-    font-size: $font-size;
     padding: 0;
     margin: 0;
 }
@@ -25,9 +20,6 @@ body {
     padding-left: $sspace;
 
     h1 {
-        font-family: "UnifrakturMaguntia";
-        font-weight: normal;
-        font-size: calc(#{$font-size} * 3);
         line-height: $xspace;
         padding-bottom: $sspace;
         border-bottom: dashed 2px;
